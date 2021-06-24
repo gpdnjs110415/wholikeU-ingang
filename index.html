@@ -1,0 +1,124 @@
+<html lang="ko">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175482077-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-175482077-1');
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+
+
+    <meta property="og:url" content="https://gpdnjs110415.github.io/wholikeU/" />
+    <meta property="og:title" content="👨‍🏫인강 강사 닮은꼴 테스트👩‍🏫" />
+    <meta property="og:description" content="나랑 닮은 인강 선생님은 누구?!" />
+    <title>👨‍🏫인강 강사 닮은꼴 테스트👩‍🏫</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="frills.css">
+
+
+    <script>
+        window.console = window.console || function (t) { };
+    </script>
+    <script>
+        if (document.location.search.match(/type=embed/gi)) {
+            window.parent.postMessage("resize", "*");
+        }
+    </script>
+</head>
+
+<body translate="no">
+
+    <header>
+        <p id="header">인강 강사 닮은꼴 테스트</p>
+    </header>
+
+
+    <div id="container-container">
+        <div></div>
+        <div class="container">
+            <div id="result-img">
+                <img id="who-teacher" src="./image/whoteacher.png" alt="teacher image">
+            </div>
+            <img id="teacher-body" src="./image/teacher-body.png" alt="">
+        </div>
+        <div></div>
+        <div class="container">
+            <div class="avatar-upload">
+                <div class="avatar-edit">
+                    <input type="file" id="imageUpload" accept=".png, .jpg, .jpeg">
+                </div>
+
+                <div class="avatar-preview" onclick='imageUpload.click();'>
+                    <img class="file-upload-image" id="profile-image" alt="your image" style="display:none;" />
+                    <div id="imagePreview">
+                        <img src="./image/whoteacher.png" alt="" zindex="-1">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div></div>
+
+    </div>
+    <div id="label-container"></div>
+
+    <div id="testBtn">
+        <button id="Btn" onclick="imageUpload.click();">테스트 하기</button>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+
+    <script
+        src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="searchface.js"></script>
+    <script id="rendered-js">
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('.file-upload-image').attr('src', e.target.result);
+                    $('#imagePreview').css('background-image', 'url(' + e.target.result + ')');
+                    $('#imagePreview').hide();
+                    $('#imagePreview img').hide();
+                    $('#imagePreview').fadeIn(650);
+                };
+                reader.readAsDataURL(input.files[0]);
+                init().then(() => {
+                    console.log('hello');
+                    predict();
+                });
+            }
+        }
+        $("#imageUpload").change(function () {
+            readURL(this);
+        });
+            //# sourceURL=pen.js
+    </script>
+
+</body>
+
+</html>

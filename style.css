@@ -1,0 +1,220 @@
+*, body{
+    width: 100%;
+    font-family:'RixYeoljeongdo_Regular';
+    font-size:1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+#testbtn{
+    position:absolute;
+}
+
+#header{
+    width: fit-content;
+    position: fixed;
+    right: 2rem;
+    top: 2rem;
+    display: block;
+    font-size: 1.7rem;
+}
+
+#result-img{
+    width:fit-content;
+    border-radius: 100%;
+    padding: 0;
+    margin-left: 100px;
+    
+}
+#result-img img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 100%;
+    border: 6px solid #F8F8F8;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.623);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#who-teacher, #who-user{
+    width: 15rem;
+    margin: 0;
+    padding: 0;
+}
+
+#teacher-body{
+    position: absolute;
+    z-index: -1;
+    width:650px;
+    height: auto;
+    margin-right: 300px;
+    margin-top: 350px;
+}
+
+body {
+    background: #396D56;
+    font-family: 'RixYeoljeongdo_Regular', sans-serif;
+}
+
+button{
+    user-select:none;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    text-decoration: none;
+    text-align: center;
+    background-color:rgb(14, 54, 31);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.623);
+    border: none;
+    padding: 1.5rem;
+    width: 50rem;
+    border-radius:50rem;
+    color: white;
+}
+
+#testBtn{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    bottom: 2rem;
+}
+
+#container-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loading{
+    width:5rem;
+    padding: 4rem 9rem;
+}
+
+.container {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+}    
+
+.input-group {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#label-container{
+    width: fit-content;
+    height: auto;
+    font-family: 'Anssang';
+    font-size:1rem;
+    margin-left: 51rem;
+}
+
+#label-container div{
+    font-family: 'Anssang';
+}
+
+.avatar-upload {
+    position: relative;
+    width: 15rem;
+}
+
+.avatar-upload .avatar-edit input {
+    display: none;
+}
+
+.avatar-upload .avatar-edit input+label {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    margin-bottom: 0;
+    border-radius: 100%;
+    background: #FFFFFF;
+    border: 1px solid transparent;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    font-weight: normal;
+    transition: all 0.2s ease-in-out;
+}
+
+.avatar-upload .avatar-edit input+label:hover {
+    background: #f1f1f1;
+    border-color: #d6d6d6;
+}
+
+.avatar-upload .avatar-edit input+label:after {
+    content: "\f040";
+    font-family: 'RixYeoljeongdo_Regular';
+    color: #757575;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+}
+
+.avatar-upload .avatar-preview {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 100%;
+    border: 6px solid #F8F8F8;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.623);
+
+}
+
+.avatar-upload .avatar-preview>div {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.avatar-upload {
+    position: relative;
+}
+
+
+@media ( max-width: 1278px ) {
+
+
+
+
+}
+
+@media ( max-width: 420px ){
+
+}
+
+@media ( max-width:375px ){
+   
+}
+
+@font-face {
+    font-family: 'RixYeoljeongdo_Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/RixYeoljeongdo_Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Anssang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_01@1.0/Anssang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
